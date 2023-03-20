@@ -24,20 +24,31 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Testing MAAC UI</title>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <body style="background-color:#c3b7c4">
+      <form action="action_page.php" method="post">
+          <div class="imgcontainer" style="background-color:#c3b7c4">
+              <img src="MAAC_logo.png" alt="Avatar" class="avatar">
+          </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+          <div class="container" style="background-color:#c3b7c4">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit">Login</button>
+              <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+          </div>
+
+          <div class="container" style="background-color:#a399a4">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+      </form>
   </body>
 </html>
